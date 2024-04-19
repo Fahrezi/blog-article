@@ -7,12 +7,11 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
     body {
-      background: rgb(18,9,67);
-      background: linear-gradient(180deg, rgba(18,9,67,1) 0%, rgba(28,16,43,1) 100%);
-      color: #F9E8C9;
+      background: #fffbf2;
+      color: #010101;
       font-family: "Chakra Petch", sans-serif;
       margin: 5rem auto;
-      width: 1280px;
+      width: 1360px;
     }
     header {
       background-blend-mode: overlay;
@@ -20,27 +19,32 @@
       background-position: center;
       background-repeat: none;
       background-size: cover;
-      height: 26rem;
-      padding: 3rem;
+      color: #fffbf2;
+      height: 15rem;
+      padding: 3rem 5rem;
+      animation-duration: 2s;
+      animation-delay: 2s;
+      animation-name: box-shadow;
+      animation-timing-function: ease-in;
+      box-shadow: 5px 5px 0px 3px rgba(181,181,181,0.41);
     }
     header > * {
       margin-left: auto;
-      width: calc(80% - 4rem);
     }
     header > h1 {
-      font-size: 46px;
-      margin-bottom: 0;
+      font-size: 72px;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
     }
     header > h4 {
-      font-size: 20px;
+      font-size: 40px;
       font-weight: 500;
     }
     section {
       column-gap: 4rem;
       display: grid;
       grid-template-columns: 20% 1fr;
-      margin-top: -19rem;
-      padding: 3rem;
+      padding: 3rem 5rem;
     }
 
     section > * {
@@ -48,7 +52,7 @@
     }
 
     section > ul {
-      border-right: solid 1px #F9E8C9;
+      border-right: solid 1px #010101;
       height: 500px;
     }
 
@@ -59,13 +63,23 @@
     }
 
     section > ul > li > a {
-      color: #F9E8C9;
+      color: #010101;
       text-decoration: none;
+    }
+
+    section > ul > li > a:hover {
+      text-decoration: underline;
     }
 
     section > div > p {
       font-size: 16px;
       line-height: 28px;
+    }
+
+    @keyframes box-shadow {
+      0% { box-shadow: 5px 5px 0px 3px rgba(181,181,181,0.41); }
+      50% { box-shadow: 20px 20px 0px 3px rgba(181,181,181,0.41); }
+      100% { box-shadow: 5px 5px 0px 3px rgba(181,181,181,0.41); }
     }
   </style>
 </head>
